@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="24dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="Введите чисала в поля ниже, чтобы сравнить их."
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:textColor="#ff7000"
+        android:textSize="42dp"
+        tools:text="РЕЗУЛЬТАТ" />
+
+    <EditText
+        android:id="@+id/inputFirstNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Введи первое число" />
+
+    <EditText
+        android:id="@+id/inputSecondNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Введи второе число" />
+
+    <Button
+        android:id="@+id/btnCompare"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Сравнить" />
+
+
+</LinearLayout>
