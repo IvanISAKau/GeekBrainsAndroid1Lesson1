@@ -29,16 +29,17 @@ public class MainActivity extends AppCompatActivity {
                     Integer SecondNum = Integer.valueOf(inputSecondNum.getText().toString());
 
                     if (FirstNum.equals(SecondNum)) {
+                        result.setTextColor(Color.rgb(0, 255, 0));
                         result.setText("Числа равны");
                     } else {
+                        result.setTextColor(Color.rgb(255, 0, 0));
                         result.setText("Числа не равны");
                     }
                 } catch (NumberFormatException e) {
+                    result.setTextColor(Color.rgb(255, 100, 0));
                     result.setText("Введите число!");
                 }
             }
         });
-
-
     }
 }
