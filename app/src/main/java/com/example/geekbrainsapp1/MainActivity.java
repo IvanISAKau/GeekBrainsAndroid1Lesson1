@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                     Integer FirstNum = Integer.valueOf(inputFirstNum.getText().toString());
                     Integer SecondNum = Integer.valueOf(inputSecondNum.getText().toString());
 
-                    if (FirstNum == SecondNum) {
+                    if (FirstNum.equals(SecondNum)) {
                         result.setText("Числа равны");
                     } else {
                         result.setText("Числа не равны");
